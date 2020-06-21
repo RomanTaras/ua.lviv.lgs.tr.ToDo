@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
-@ComponentScan(basePackages = {"ua.lviv"})
+@ComponentScan(basePackages = {"ua.lviv.lgs.tr.ToDo"})
 @EnableWebMvc
 public class SpringWebConfig implements WebMvcConfigurer {
 

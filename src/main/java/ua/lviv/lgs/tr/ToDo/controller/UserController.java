@@ -53,12 +53,12 @@ public class UserController {
 
     @RequestMapping(value = {"/logindo"})
     public String logindo(@ModelAttribute("command") LoginCommand cmd, Model m, HttpSession session) {
-        User loggedinUser = userService.login(cmd.getLoginName(), cmd.getPassword());
-        if (loggedinUser == null) {
+        User loggedInUser = userService.login(cmd.getLoginName(), cmd.getPassword());
+        if (loggedInUser == null) {
             m.addAttribute("error", "You provided wrong information.</br>Please provide valid credentials");
             return "login";
         } else {
-            addUserInSession(loggedinUser, session);
+            addUserInSession(loggedInUser, session);
             return "redirect:addTask?act=taskpage";
         }
 

@@ -22,7 +22,7 @@
             height: 65px;
             position: fixed;
             top: 0;
-            background-color: black;
+            background-color: #1468a0;
             position: fixed;
             display: block;
             text-align: center;
@@ -49,7 +49,7 @@
             height: 65px;
             position: fixed;
             top: 0;
-            background-color: black;
+            background-color: #1468a0;
             position: fixed;
             display: block;
             text-align: center;
@@ -111,8 +111,7 @@
 
             <s:url var="url_login_form" value="/loginform"/>
             <a href="${url_login_form}" id="link1">LOGIN</a>
-            <s:url var="url_about_me" value="/aboutme"/>
-            <a href="${url_about_me}" id="link1">ABOUT ME</a>
+
         </div>
     </c:if>
     <c:if test="${sessionScope.userId !=null}">
@@ -150,8 +149,6 @@
 
                 <s:url var="url_logout" value="/logout"/>
                 <li><a href="${url_logout}" id="link">LOGOUT</a></li>
-                <s:url var="url_about_me" value="#"/>
-                <li><a href="${url_about_me}" id="link">ABOUTME</a></li>
             </ul>
         </div>
     </c:if>

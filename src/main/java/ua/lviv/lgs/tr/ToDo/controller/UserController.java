@@ -24,11 +24,6 @@ public class UserController {
         return "index";
     }
 
-    @RequestMapping(value = {"/aboutme"})
-    public String getAboutMe() {
-        return "aboutme";
-    }
-
     @RequestMapping(value = {"/reg_form"})
     public String register(Model m) {
         RegCommand cmd = new RegCommand();
@@ -40,7 +35,6 @@ public class UserController {
     public String registerUser(@ModelAttribute("command") RegCommand cmd, Model m) {
         User u = cmd.getU();
         userService.register(u);
-
         return "redirect:loginform?act=reg";
     }
 

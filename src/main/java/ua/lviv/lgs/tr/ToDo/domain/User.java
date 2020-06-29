@@ -2,6 +2,7 @@ package ua.lviv.lgs.tr.ToDo.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @AllArgsConstructor
-
+@NoArgsConstructor
 
 @Entity
 @Table(name = "user")
@@ -17,78 +18,38 @@ public class User {
 
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Column(name = "userID", nullable = false)
     private Integer userId;
 
-    @Column(nullable = false)
-    private String name;
 
-    @Column(nullable = false, unique = true)
-    private String phone;
+    @Column()
+    private String login_name;
 
-    @Column(unique = true)
-    private String loginName;
-
-    @Column(nullable = false)
-    private String password;
-
-    @Column(nullable = false)
+    @Column
     private String loginStatus;
 
-    public User() {
-    }
+    @Column
+    private String name;
 
 
-    public Integer getUserId() {
-        return userId;
-    }
+    @Column
+    private String password;
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
+    @Column
+    private String phone;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getLoginName() {
-        return loginName;
-    }
-
-    public void setLoginName(String loginName) {
-        this.loginName = loginName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getLoginStatus() {
-        return loginStatus;
-    }
-
-    public void setLoginStatus(String loginStatus) {
-        this.loginStatus = loginStatus;
-    }
 
     @Override
     public String toString() {
-        return "User{" + "userId=" + userId + ", name=" + name + ", phone=" + phone + ", loginName=" + loginName + ", password=" + password + ", loginStatus=" + loginStatus + '}';
+        return "User{" +
+                "userId=" + userId +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", loginName='" + login_name + '\'' +
+                ", password='" + password + '\'' +
+                ", loginStatus='" + loginStatus + '\'' +
+                '}';
     }
 }

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : Jun 1, 2018, 2:02:14 AM
-    Author     : Noman Ibrahim
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f" %>
 

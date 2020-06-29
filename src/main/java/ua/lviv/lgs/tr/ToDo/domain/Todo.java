@@ -17,8 +17,10 @@ import javax.persistence.*;
 public class Todo {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "todoID", nullable = false)
     private Integer todoId;
+    @Column(name = "userID", nullable = false)
     private Integer userId;
 
     @Column(name = "day", nullable = false)
@@ -34,5 +36,19 @@ public class Todo {
     @Column(name = "priority", nullable = false)
     private String priority;
 
+
+    @Override
+    public String toString() {
+        return "Todo{" +
+                "todoId=" + todoId +
+                ", userId=" + userId +
+                ", day='" + day + '\'' +
+                ", month='" + month + '\'' +
+                ", year='" + year + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", priority='" + priority + '\'' +
+                '}';
+    }
 }
 

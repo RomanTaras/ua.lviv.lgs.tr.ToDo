@@ -1,16 +1,17 @@
 Query For User table
 
-CREATE TABLE user(
+CREATE TABLE userr(
   userId INT AUTO_INCREMENT PRIMARY KEY,
+  loginName VARCHAR(255) NOT NULL
   name VARCHAR(255) NOT NULL,
   phone VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL,
-  loginName VARCHAR(255) NOT NULL
+
 );
 
 Query for Todo table
 
-CREATE TABLE user(
+CREATE TABLE todo(
   todoId INT AUTO_INCREMENT PRIMARY KEY,
   userId INT,
   month VARCHAR(255) NOT NULL,

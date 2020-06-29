@@ -19,6 +19,4 @@ public class LoginCommand {
     public void setPassword(String password) {
         this.password = password;
     }
-
-
 }

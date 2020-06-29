@@ -1,9 +1,3 @@
-<%-- 
-    Document   : addNewTask
-    Created on : Jun 8, 2018, 3:09:30 PM
-    Author     : Noman Ibrahim
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f" %>
 

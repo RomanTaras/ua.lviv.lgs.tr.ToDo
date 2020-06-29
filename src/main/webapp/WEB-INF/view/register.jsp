@@ -1,9 +1,3 @@
-<%-- 
-    Document   : register
-    Created on : May 27, 2018, 1:46:54 AM
-    Author     : Noman Ibrahim
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f" %>
 
@@ -37,7 +31,7 @@
         </br>
         </br
         </br>
-        <f:input path="u.loginName" placeholder="Enter your user name" id="box"/>
+        <f:input path="u.login_name" placeholder="Enter your user name" id="box"/>
         </br>
         </br>
         </br>

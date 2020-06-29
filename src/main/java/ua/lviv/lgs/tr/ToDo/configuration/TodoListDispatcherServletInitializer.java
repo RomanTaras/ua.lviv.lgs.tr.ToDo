@@ -1,4 +1,3 @@
-
 package ua.lviv.lgs.tr.ToDo.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

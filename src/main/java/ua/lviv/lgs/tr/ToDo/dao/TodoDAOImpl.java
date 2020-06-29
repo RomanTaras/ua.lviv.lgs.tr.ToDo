@@ -53,7 +53,7 @@ public class TodoDAOImpl extends BaseDAO implements ua.lviv.lgs.tr.ToDo.dao.Todo
 
     @Override
     public void delete(Todo todo) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
@@ -70,7 +70,7 @@ public class TodoDAOImpl extends BaseDAO implements ua.lviv.lgs.tr.ToDo.dao.Todo
 
     @Override
     public List<Todo> findAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override

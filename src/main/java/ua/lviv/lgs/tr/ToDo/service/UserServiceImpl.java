@@ -28,10 +28,12 @@ public class UserServiceImpl extends BaseDAO implements ua.lviv.lgs.tr.ToDo.serv
     }
 
     @Override
-    public User login(String loginName, String password) {
-        String sql = "SELECT userid, name, phone,loginName FROM user WHERE loginName=:ln AND password=:pw";
+    public User login(String login_name, String password) {
+
+        String sql = "SELECT userid, name, phone,login_name FROM user WHERE login_name=:ln AND password=:pw";
+
         Map m = new HashMap();
-        m.put("ln", loginName);
+        m.put("ln", login_name);
         m.put("pw", password);
         try {
             User u = getNamedParameterJdbcTemplate().queryForObject(sql, m, new UserRowMapper());
@@ -49,3 +51,4 @@ public class UserServiceImpl extends BaseDAO implements ua.lviv.lgs.tr.ToDo.serv
     }
 
 }
+

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : hello
-    Created on : May 25, 2018, 2:03:45 AM
-    Author     : Noman Ibrahim
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>

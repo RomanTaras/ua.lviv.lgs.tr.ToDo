@@ -1,14 +1,9 @@
-/* Body used to represent the whole page.
-background-repeat : no-repeat prevents the image to not to repeat again and again
-
-*/
 body {
     background-image: url("../images/bg2.jpg");
     background-repeat: no-repeat;
     background-size: 100% 920px;
 }
 
-/* heading div having a heading <h3> */
 .heading {
     background-color: #4b0d2b;
     width: 560px;
@@ -22,7 +17,6 @@ body {
 }
 
 
-/* the main div having the form */
 .todo_form {
     width: 600px;
     height: 805px;
@@ -36,21 +30,18 @@ body {
 }
 
 
-/* Class table is a div*/
 .table {
     margin-left: 25px;
 }
 
-/* to get the <th> element */
+
 .table th {
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: white;
     font-size: 20px;
 }
 
-/*
- id for table cell.
-*/
+
 #tdtd {
 
     height: 30px;
@@ -63,7 +54,6 @@ body {
 }
 
 
-/* This is the div that holds the second table as class name table*/
 .title {
     margin-top: 50px;
     margin-left: 3px;
@@ -79,7 +69,7 @@ body {
 
 }
 
-/* This is the id that to manupulate input text box*/
+
 #title {
     height: 30px;
     width: 530px;
@@ -89,7 +79,6 @@ body {
 }
 
 
-/* ======= TEXT AREA DIV =========*/
 #textarea {
     width: 530px;
     height: 100px;
@@ -106,7 +95,6 @@ body {
 }
 
 
-/* ========= RADIO BUTTON DIV====== */
 .radio {
     display: inline-block;
     position: relative;
@@ -119,7 +107,7 @@ body {
     font-weight: bolder;
 }
 
-/* -=========== PRIORITY DIV============*/
+
 .priority h3 {
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: white;

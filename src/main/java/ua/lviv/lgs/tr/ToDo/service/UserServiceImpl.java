@@ -41,8 +41,6 @@ public class UserServiceImpl extends BaseDAO implements ua.lviv.lgs.tr.ToDo.serv
         } catch (EmptyResultDataAccessException ex) {
             return null;
         }
-
-
     }
 
     @Override

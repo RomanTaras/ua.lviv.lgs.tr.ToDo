@@ -103,40 +103,5 @@ public class TodoController {
         return "addNewTaskPriority";
     }
 
-    @RequestMapping(value = {"/search"})
-    public String search(Model m, HttpSession session, @RequestParam("freetext") String freetext) {
-
-        Integer userId = (Integer) session.getAttribute("userId");
-        m.addAttribute("todolists", todoservice.findUserTodo(userId, freetext));
-        return "todolist";
-    }
-
-    @RequestMapping(value = {"/search_priority"})
-    public String searchPriority(Model m, HttpSession session, @RequestParam("freetext") String freetext) {
-        Integer userId = (Integer) session.getAttribute("userId");
-        m.addAttribute("todolists", todoservice.findUserTodo(userId, freetext));
-        return "viewTaskByPriority";
-    }
-
-    @RequestMapping(value = {"/High"})
-    public String searchPriorityHigh(Model m, HttpSession session) {
-        Integer userId = (Integer) session.getAttribute("userId");
-        m.addAttribute("todolists", todoservice.findUserTodoOnlyHigh(userId));
-        return "viewTaskByPriority";
-    }
-
-    @RequestMapping(value = {"/Medium"})
-    public String searchPriorityMedium(Model m, HttpSession session) {
-        Integer userId = (Integer) session.getAttribute("userId");
-        m.addAttribute("todolists", todoservice.findUserTodoOnlyMedium(userId));
-        return "viewTaskByPriority";
-    }
-
-    @RequestMapping(value = {"/Low"})
-    public String searchPriorityLow(Model m, HttpSession session) {
-        Integer userId = (Integer) session.getAttribute("userId");
-        m.addAttribute("todolists", todoservice.findUserTodoOnlyLow(userId));
-        return "viewTaskByPriority";
-    }
 
 }

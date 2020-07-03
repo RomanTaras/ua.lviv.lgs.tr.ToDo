@@ -24,6 +24,4 @@ public class SpringRootConfig {
         ds.setDefaultAutoCommit(true);
         return ds;
     }
-
-
 }

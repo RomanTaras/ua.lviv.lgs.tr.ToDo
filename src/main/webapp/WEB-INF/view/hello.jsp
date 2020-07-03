@@ -6,6 +6,6 @@
     <title>JSP Page</title>
 </head>
 <body>
-<h1>Hello This is todolist app testing configuration</h1>
+<h1>Hello </h1>
 </body>
 </html>

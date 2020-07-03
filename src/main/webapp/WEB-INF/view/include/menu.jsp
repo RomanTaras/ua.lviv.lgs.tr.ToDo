@@ -120,31 +120,13 @@
                 <s:url var="url_addnemTask" value="#"/>
                 <li><a href="${url_addnewTask}">ADD NEW TASK</a></li>
                 <s:url var="url_search" value="/todolist"/>
-                <li><a href="${url_search}">MY TASKS</a>
-                    <ul>
-                        <li>
-                            <s:url var="url_priority" value="/priority"/>
-                            <a href="${url_priority}">ORDER BY PRIORITY</a>
-                        </li>
-                        <li>
-                            <s:url var="url_by_time" value="/time"/>
-                            <a href="${url_by_time}">ORDER BY TIME</a>
-                        </li>
-                        <li>
-                            <s:url var="url_only_for_High" value="/High"/>
-                            <a href="${url_only_for_High}">ONLY FOR HIGH</a>
-                        </li>
-                        <li>
-                            <s:url var="url_only_for_Medium" value="/Medium"/>
-                            <a href="${url_only_for_Medium}">ONLY FOR MEDIUM</a>
-                        </li>
-                        <li>
-                            <s:url var="url_only_for_Low" value="/Low"/>
-                            <a href="${url_only_for_Low}">ONLY FOR LOW</a>
-                        </li>
+                <ul>
+                    <li>
+                        <s:url var="url_priority" value="/priority"/>
+                        <a href="${url_priority}">ORDER BY PRIORITY</a>
+                    </li>
 
-                    </ul>
-
+                </ul>
                 </li>
 
                 <s:url var="url_logout" value="/logout"/>

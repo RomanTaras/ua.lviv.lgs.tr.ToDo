@@ -53,9 +53,8 @@ public class UserController {
             return "login";
         } else {
             addUserInSession(loggedInUser, session);
-            return "redirect:addTask?act=taskpage";
+            return "redirect:addTask?act=task page";
         }
-
     }
 
     @RequestMapping(value = "/logout")
